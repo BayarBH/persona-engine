@@ -1,4 +1,4 @@
-# Persona Engine 人格引擎
+# Persona Engine
 
 A programmable AI personality evolution engine. Not a chatbot — a system for creating AI entities with memory, evolving values, emotional dynamics, and behavioral tipping points.
 
