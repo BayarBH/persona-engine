@@ -1,0 +1,50 @@
+{
+  "name": "persona-engine",
+  "version": "0.1.0",
+  "description": "Programmable AI personality evolution engine with memory, values, and tipping points",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "serve": "tsx src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "example": "tsx examples/basic.ts",
+    "example:chat": "tsx examples/interactive-chat.ts"
+  },
+  "keywords": [
+    "ai",
+    "persona",
+    "personality",
+    "evolution",
+    "agent",
+    "memory",
+    "llm"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.0",
+    "nanoid": "^5.0.9",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "eslint": "^9.15.0"
+  }
+}
